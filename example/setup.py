@@ -9,6 +9,8 @@ with open("./evil_package/__init__.py") as fp:
     # pylint: disable=W0122
     exec(fp.read(), VERSION)
 
+# Here, at install-time, you can run arbitrary code and steal stuff.
+
 setup(
     name="evil_package",
     author="Ryan",
